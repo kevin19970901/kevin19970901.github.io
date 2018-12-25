@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="twitter:site" content="@tcstudio">
+    <meta name="twitter:creator" content="@kevin19970901">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="嘉大小幫手">
+    <meta name="twitter:description" content="嘉大小幫手整合了學生常用的各項功能，尋找資訊不再麻煩。">
+    <meta name="twitter:image" content="https://kevin19970901.github.io/ncyu/preview.jpg">
+
+    <meta property="og:url" content="https://kevin19970901.github.io/ncyu">
+    <meta property="og:title" content="嘉大小幫手">
+    <meta property="og:description" content="嘉大小幫手整合了學生常用的各項功能，尋找資訊不再麻煩。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kevin19970901.github.io/ncyu/preview.jpg">
+    <meta property="og:image:secure_url" content="https://kevin19970901.github.io/ncyu/preview.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+
+    <meta name="author" content="kevin19970901">
+    <meta name="description" content="嘉大小幫手整合了學生常用的各項功能，尋找資訊不再麻煩。">
+    <meta name="keywords" content="NCYU, Helper, 嘉大小幫手">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="metro/css/metro-all.css?ver=@@b-version" rel="stylesheet">
+    <link href="start.css" rel="stylesheet">
+	<link href="desktop.css" rel="stylesheet">
+
+    <title>嘉大小幫手網頁版</title>
+
+</head>
+<body class="bg-dark fg-white h-vh-100 m4-cloak">
+
+    <div class="container-fluid start-screen h-100">
+
+		<div class="desktop">
+		<div class="window-area bg-dark">
+		<div class="task-bar-section tasks">
+		</div>
+
+        <h1 class="start-screen-title">嘉大小幫手</h1>
+		<h2 class="start-screen-sub-title" align="right">NCYU Helper</h2>
+
+        <div class="tiles-area clear">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="常用功能">
+                <a href="http://www.ncyu.edu.tw" data-role="tile" class="bg-indigo fg-white">
+                    <span class="mif-home icon"></span>
+                    <span class="branding-bar">嘉義大學首頁</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="https://mail.ncyu.edu.tw" data-role="tile" class="bg-cyan fg-white">
+                    <span class="mif-envelop icon"></span>
+                    <span class="branding-bar">嘉大電子信箱</span>
+                    <span class="badge-bottom  mif-arrow-right"></span>
+                </a>
+                <a href="https://web085004.adm.ncyu.edu.tw" data-role="tile" class="bg-green fg-white">
+                    <span class="mif-users icon"></span>
+                    <span class="branding-bar">校務行政系統</span>
+					<span class="badge-bottom  mif-arrow-right"></span>
+                </a>
+                <a href="https://elearning.ncyu.edu.tw" data-role="tile" class="bg-orange fg-white">
+                    <span class="mif-open-book icon"></span>
+                    <span class="branding-bar">E-learning</span>
+					<span class="badge-bottom  mif-arrow-right"></span>
+                </a>
+                <a href="http://www.ncyu.edu.tw/academic/itemize_list.aspx?site_content_sn=19867" data-role="tile" class="bg-teal fg-white">
+                    <span class="mif-table icon"></span>
+                    <span class="branding-bar">行事曆</span>
+                    <span class="badge-bottom  mif-arrow-right"></span>
+                </a>
+                <a onclick="contact_school()" data-role="tile" class="bg-red fg-white">
+                    <span class="mif-contacts-dialer icon"></span>
+                    <span class="branding-bar">學校聯絡資訊</span>
+                    <span class="badge-bottom mif-more-horiz"></span>
+                </a>
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="八卦、新聞與更新日誌">
+                <a href="https://www.dcard.tw/f/ncyu" data-role="tile" data-cover="images/dcard.png">
+					<span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="https://www.ptt.cc/bbs/NCYU" data-role="tile" data-effect="animate-fade" data-effect-duration="1000">
+                    <div class="slide" data-cover="images/ptt.png"></div>
+                    <div class="slide" data-cover="images/ptt2.png"></div>
+                    <div class="slide" data-cover="images/ptt3.jpg"></div>
+					<span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <div data-role="tile" data-size="wide" data-effect="animate-slide-left" class="bg-green fg-white">
+                    <div class="slide" data-cover="images/1.jpg"></div>
+                    <div class="slide" data-cover="images/2.jpg"></div>
+                    <div class="slide" data-cover="images/3.jpg"></div>
+                    <div class="slide" data-cover="images/4.jpg"></div>
+                    <div class="slide" data-cover="images/5.jpg"></div>
+                    <span class="branding-bar">可愛動物</span>
+                </div>
+                <div data-role="tile" data-size="wide" data-effect="image-set" class="bg-white fg-black">
+                    <img src="images/apple.png">
+                    <img src="images/pineapple.png">
+                    <img src="images/mango.png">
+                    <img src="images/banana.png">
+                    <img src="images/guava.png">
+                </div>
+            </div>
+
+            <div class="tiles-grid tiles-group size-1 fg-white" data-group-title="交通運輸相關">
+                <a onclick="bus()" data-role="tile" class="bg-brown fg-white">
+                    <span class="mif-bus icon"></span>
+                    <span class="branding-bar">公車客運</span>
+                    <span class="badge-bottom mif-more-horiz"></span>
+                </a>
+                <a onclick="railway()" data-role="tile" class="bg-orange fg-white">
+                    <span class="mif-train icon"></span>
+                    <span class="branding-bar">鐵路運輸</span>
+                    <span class="badge-bottom mif-more-horiz"></span>
+                </a>
+                <a href="https://drive.google.com/open?id=1mVeN2POyvdLGJrmmfEdI7-21UyJCS_L3" data-role="tile" class="bg-green fg-white">
+                    <span class="mif-motorcycle icon"></span>
+                    <span class="branding-bar">機車停放資訊</span>
+					<span class="badge-bottom mif-arrow-right"></span>
+                </a>
+            </div>
+
+            <div class="tiles-grid tiles-group size-3 fg-white" data-group-title="其他功能">
+                <a href="https://libaleph.ncyu.edu.tw" data-role="tile" class="bg-indigo fg-white">
+                    <span class="mif-library icon"></span>
+                    <span class="branding-bar">圖書館藏查詢</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="http://www.ncyu.edu.tw/lgc" data-role="tile" class="bg-orange fg-white">
+                    <span class="mif-language icon"></span>
+                    <span class="branding-bar">語言中心</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="https://www.facebook.com/groups/NCYU.NO1" data-role="tile" class="bg-green fg-white">
+                    <span class="mif-facebook2 icon"></span>
+                    <span class="branding-bar">嘉大FB社團</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="https://house.nfu.edu.tw/NCYU" data-role="tile" class="bg-cyan fg-white">
+                    <span class="mif-room icon"></span>
+                    <span class="branding-bar">租屋資訊</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="http://www.ncyu.edu.tw/newsite/itemize_list.aspx?site_content_sn=20706" data-role="tile" class="bg-brown fg-white">
+                    <span class="mif-map icon"></span>
+                    <span class="branding-bar">各校區地圖</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="https://web085003.adm.ncyu.edu.tw/pub_course.aspx" data-role="tile" class="bg-yellow fg-brown">
+                    <span class="mif-search icon"></span>
+                    <span class="branding-bar">全校課程查詢</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <a href="https://www.google.com/maps/d/u/0/viewer?mid=1aE48H82Jvxr901BzeXAPCSstUWFM8Z1L" data-role="tile" class="bg-red fg-white">
+                    <span class="mif-spoon-fork icon"></span>
+                    <span class="branding-bar">學生會特約商店</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="小幫手相關">
+                <a href="http://mctcstudio.weebly.com/22635235313492021934.html" data-role="tile" class="bg-indigo fg-white">
+                    <span class="mif-pencil icon"></span>
+                    <span class="branding-bar">回饋意見</span>
+                    <span class="badge-bottom  mif-arrow-right"></span>
+                </a>
+                <a onclick="aboutme()" data-role="tile" class="bg-cyan fg-white">
+                    <span class="mif-user-secret icon"></span>
+                    <span class="branding-bar">關於作者</span>
+                    <span class="badge-bottom mif-more-horiz"></span>
+                </a>
+                <a onclick="about()" data-role="tile" class="bg-orange fg-white">
+                    <span class="mif-bubble icon"></span>
+                    <span class="branding-bar">關於小幫手</span>
+					<span class="badge-bottom mif-more-horiz"></span>
+                </a>
+                <a href="https://kevin19970901.github.io" data-role="tile" class="bg-green fg-white">
+                    <span class="mif-news icon"></span>
+                    <span class="branding-bar">東東的個人網站</span>
+					<span class="badge-bottom mif-arrow-right"></span>
+                </a>
+                <div data-role="tile" class="bg-cyan fg-white">
+                    <span class="mif-dollar2 icon"></span>
+                    <span class="branding-bar">斗內東東</span>
+					<span class="badge-bottom mif-arrow-right"></span>
+                </div>
+                <a href="http://mctcstudio.weebly.com/" data-role="tile" class="bg-teal fg-white">
+                    <span class="mif-dribbble icon"></span>
+                    <span class="branding-bar">工作室官網</span>
+					<span class="badge-bottom mif-arrow-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="metro/js/metro.js"></script>
+    <script src="start.js"></script>
+    <script src="desktop.js"></script>
+    <script>
+        function contact_school(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-apps'></span>",
+                title: "學校聯絡資訊",
+                content: "<div class='p-2' style='text-align:center'>蘭潭校區：60004 嘉義市東區鹿寮里學府路300號　TEL：05-2717000　FAX：05-2717095<br>新民校區：60054 嘉義市西區新民路580號　TEL：05-2717000　FAX：05-2717095<br>民雄校區：62103 嘉義縣民雄鄉文隆村85號　TEL：05-2263411　FAX：05-2264621<br>林森校區：60074 嘉義市東區林森東路151號　TEL：05-2717000　FAX：05-2717095<br>軍訓室值勤教官24H緊急電話：05-2717373</div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				//position: "fixed",
+                place: "center",
+            });
+        }
+
+        function bus(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-apps'></span>",
+                title: "請選擇查詢項目",
+                content: "<div class='p-2' style='text-align:center'><a href='https://drive.google.com/open?id=1_iClp2-xc-YYPHl4RCrzBtql_MjMuIth'>市區公車</a><br><a href='http://e-bus.chiayi.gov.tw/Ali.ebus.web/Home/RouteMap?rid=560'>BRT（縣立體育館⇆高鐵⇆嘉義公園）</a><br><a href='http://www.ncyu.edu.tw/files/list/affair/10108-%E5%85%AC%E6%96%87%E8%BB%8A%E7%99%BC%E8%BB%8A%E6%99%82%E9%96%93.pdf'>校內公文車</a><br><a href='https://drive.google.com/open?id=1b8YZap5ybXltwdGdm7Z7ih2BikzgnH3e'>嘉義客運（蘭潭校區生活圈）</a><br><a href='https://drive.google.com/open?id=190Ok7mEzEVMasuPpQRIW1tQGCevtkqqr'>嘉義客運（新民校區生活圈）</a><br>嘉義縣公車（尚未建置內容）</div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				//position: "fixed",
+                place: "center",
+            });
+        }
+
+        function railway(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-apps'></span>",
+                title: "請選擇查詢項目",
+                content: "<div class='p-2' style='text-align:center'><a href='http://twtraffic.tra.gov.tw/twrail/TW_Quicksearch.aspx'>台灣鐵路</a><br><a href='https://www.thsrc.com.tw/tw/TimeTable/SearchResult'>台灣高鐵</a><br><a href='https://www.krtco.com.tw/train_info/service-1.aspx'>高雄捷運</a><br><a href='https://www.metro.taipei/cp.aspx?n=91974F2B13D997F1'>台北捷運</a><br><a href='https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.html'>桃園捷運</a></div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				//position: "fixed",
+                place: "center",
+            });
+        }
+
+		function aboutme(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-cogs'></span>",
+                title: "關於作者",
+                content: "<div class='p-2' style='text-align:center'>我是東東，高雄人，目前就讀於木設系。<br>我喜歡：園藝、旅遊、聽歌、玩電腦、看著風景發呆、可愛的你>w<</div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				//position: "fixed",
+                place: "center",
+            });
+        }
+
+        function about(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-apps'></span>",
+                title: "關於小幫手",
+                content: "<div class='p-2' style='text-align:center'>小幫手版本：R9<br>釋出年月日：2019/01/01<br>小幫手作者：木設系　謝旭東<br>網頁使用模板：Metro 4 - https://metroui.org.ua</div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				//position: "fixed",
+                place: "center",
+            });
+        }
+    </script>
+
+</body>
+</html>
