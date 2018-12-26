@@ -143,10 +143,10 @@
                     <span class="branding-bar">嘉大FB社團</span>
                     <span class="badge-bottom mif-arrow-right"></span>
                 </a>
-                <a href="https://house.nfu.edu.tw/NCYU" data-role="tile" class="bg-cyan fg-white">
+                <a onclick="rent()" data-role="tile" class="bg-cyan fg-white">
                     <span class="mif-room icon"></span>
                     <span class="branding-bar">租屋資訊</span>
-                    <span class="badge-bottom mif-arrow-right"></span>
+                    <span class="badge-bottom mif-more-horiz"></span>
                 </a>
                 <a href="http://www.ncyu.edu.tw/newsite/itemize_list.aspx?site_content_sn=20706" data-role="tile" class="bg-brown fg-white">
                     <span class="mif-map icon"></span>
@@ -241,6 +241,21 @@
                 icon: "<span class='mif-apps'></span>",
                 title: "請選擇查詢項目",
                 content: "<div class='p-2' style='text-align:center'><a href='http://twtraffic.tra.gov.tw/twrail/TW_Quicksearch.aspx'>台灣鐵路</a><br><a href='https://www.thsrc.com.tw/tw/TimeTable/SearchResult'>台灣高鐵</a><br><a href='https://www.krtco.com.tw/train_info/service-1.aspx'>高雄捷運</a><br><a href='https://www.metro.taipei/cp.aspx?n=91974F2B13D997F1'>台北捷運</a><br><a href='https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.html'>桃園捷運</a></div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				//position: "fixed",
+                place: "center",
+            });
+        }
+
+		function rent(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-cogs'></span>",
+                title: "請選擇查詢項目",
+                content: "<div class='p-2' style='text-align:center'><a href='https://house.nfu.edu.tw/NCYU'>嘉大校外賃居網（校方提供）</a><br><a href='https://www.facebook.com/groups/697453850283188'>嘉義租屋媒合資訊網（FB社團）</a><br><a href='https://www.facebook.com/groups/344095802376944'>嘉義租屋、二手廣告資訊網（FB社團）</a></div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
