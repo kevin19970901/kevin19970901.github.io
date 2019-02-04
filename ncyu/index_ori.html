@@ -31,18 +31,14 @@
 
     <link href="metro/css/metro-all.css?ver=@@b-version" rel="stylesheet">
     <link href="start.css" rel="stylesheet">
-	<link href="desktop.css" rel="stylesheet">
 
     <title>嘉大小幫手</title>
 
 </head>
-<div class="desktop">
-<div class="window-area bg-dark">
-<div class="task-bar-section tasks">
-
 <body class="bg-dark fg-white h-vh-100 m4-cloak">
 
     <div class="container-fluid start-screen h-100">
+	<div class="window-area bg-dark">
 
         <h1 class="start-screen-title">嘉大小幫手</h1>
 		<h2 class="start-screen-sub-title" align="right">NCYU Helper</h2>
@@ -81,31 +77,21 @@
                 </a>
             </div>
 
-            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="八卦、新聞與更新日誌">
+            <div class="tiles-grid tiles-group size-1 fg-white" data-group-title="社群">
                 <a href="https://www.dcard.tw/f/ncyu" data-role="tile" data-cover="images/dcard.png">
 					<span class="badge-bottom mif-arrow-right"></span>
                 </a>
-                <a href="https://www.ptt.cc/bbs/NCYU" data-role="tile" data-effect="animate-fade" data-effect-duration="1000">
+                <a href="https://www.facebook.com/groups/NCYU.NO1" data-role="tile" class="bg-green fg-white">
+                    <span class="mif-facebook2 icon"></span>
+                    <span class="branding-bar">嘉大FB社團</span>
+                    <span class="badge-bottom mif-arrow-right"></span>
+                </a>
+				<a href="https://www.ptt.cc/bbs/NCYU" data-role="tile" data-effect="animate-fade" data-effect-duration="1000">
                     <div class="slide" data-cover="images/ptt.png"></div>
                     <div class="slide" data-cover="images/ptt2.png"></div>
                     <div class="slide" data-cover="images/ptt3.jpg"></div>
 					<span class="badge-bottom mif-arrow-right"></span>
                 </a>
-                <div data-role="tile" data-size="wide" data-effect="animate-slide-left" class="bg-green fg-white">
-                    <div class="slide" data-cover="images/1.jpg"></div>
-                    <div class="slide" data-cover="images/2.jpg"></div>
-                    <div class="slide" data-cover="images/3.jpg"></div>
-                    <div class="slide" data-cover="images/4.jpg"></div>
-                    <div class="slide" data-cover="images/5.jpg"></div>
-                    <span class="branding-bar">可愛動物</span>
-                </div>
-                <div data-role="tile" data-size="wide" data-effect="image-set" class="bg-white fg-black">
-                    <img src="images/apple.png">
-                    <img src="images/pineapple.png">
-                    <img src="images/mango.png">
-                    <img src="images/banana.png">
-                    <img src="images/guava.png">
-                </div>
             </div>
 
             <div class="tiles-grid tiles-group size-1 fg-white" data-group-title="交通運輸相關">
@@ -126,7 +112,7 @@
                 </a>
             </div>
 
-            <div class="tiles-grid tiles-group size-3 fg-white" data-group-title="其他功能">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="其他功能">
                 <a href="https://libaleph.ncyu.edu.tw" data-role="tile" class="bg-indigo fg-white">
                     <span class="mif-library icon"></span>
                     <span class="branding-bar">圖書館藏查詢</span>
@@ -135,11 +121,6 @@
                 <a href="http://www.ncyu.edu.tw/lgc" data-role="tile" class="bg-orange fg-white">
                     <span class="mif-language icon"></span>
                     <span class="branding-bar">語言中心</span>
-                    <span class="badge-bottom mif-arrow-right"></span>
-                </a>
-                <a href="https://www.facebook.com/groups/NCYU.NO1" data-role="tile" class="bg-green fg-white">
-                    <span class="mif-facebook2 icon"></span>
-                    <span class="branding-bar">嘉大FB社團</span>
                     <span class="badge-bottom mif-arrow-right"></span>
                 </a>
                 <a onclick="rent()" data-role="tile" class="bg-cyan fg-white">
@@ -163,6 +144,24 @@
                     <span class="badge-bottom mif-arrow-right"></span>
                 </a>
             </div>
+			
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="相簿">
+                <div data-role="tile" data-size="wide" data-effect="animate-slide-left" class="bg-green fg-white">
+                    <div class="slide" data-cover="images/1.jpg"></div>
+                    <div class="slide" data-cover="images/2.jpg"></div>
+                    <div class="slide" data-cover="images/3.jpg"></div>
+                    <div class="slide" data-cover="images/4.jpg"></div>
+                    <div class="slide" data-cover="images/5.jpg"></div>
+                    <span class="branding-bar">可愛動物</span>
+                </div>
+                <div data-role="tile" data-size="wide" data-effect="image-set" class="bg-white fg-black">
+                    <img src="images/apple.png">
+                    <img src="images/pineapple.png">
+                    <img src="images/mango.png">
+                    <img src="images/banana.png">
+                    <img src="images/guava.png">
+                </div>
+            </div>
 
             <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="小幫手相關">
                 <a href="http://mctcstudio.weebly.com/22635235313492021934.html" data-role="tile" class="bg-indigo fg-white">
@@ -185,11 +184,11 @@
                     <span class="branding-bar">東東的個人網站</span>
 					<span class="badge-bottom mif-arrow-right"></span>
                 </a>
-                <div data-role="tile" class="bg-cyan fg-white">
+                <a onclick="donate()" data-role="tile" class="bg-brown fg-white">
                     <span class="mif-dollar2 icon"></span>
                     <span class="branding-bar">斗內東東</span>
-					<span class="badge-bottom mif-arrow-right"></span>
-                </div>
+					<span class="badge-bottom mif-more-horiz"></span>
+                </a>
                 <a href="http://mctcstudio.weebly.com/" data-role="tile" class="bg-teal fg-white">
                     <span class="mif-dribbble icon"></span>
                     <span class="branding-bar">工作室官網</span>
@@ -198,9 +197,7 @@
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+	</div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="metro/js/metro.js"></script>
@@ -213,7 +210,7 @@
                 width: "90%",
                 icon: "<span class='mif-apps'></span>",
                 title: "更新日誌",
-                content: "<div class='p-2' style='text-align:center'>2019/01/29<br>調整了顯示彈跳視窗的語法，<br>電腦與手機上瀏覽均已修正。</div>",
+                content: "<div class='p-2' style='text-align:center'>2019/01/29<br>調整了顯示彈跳視窗的語法，<br>電腦與手機上瀏覽均已修正。<br><br>調整了各項功能的分類名稱。<br><br>點擊學校聯絡地址後的圖示，<br>可在Google地圖APP中顯示。</div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
@@ -230,7 +227,7 @@
                 width: "90%",
                 icon: "<span class='mif-apps'></span>",
                 title: "學校聯絡資訊",
-                content: "<div class='p-2' style='text-align:center'>蘭潭校區：60004 嘉義市東區鹿寮里學府路300號　TEL：05-2717000　FAX：05-2717095<br>新民校區：60054 嘉義市西區新民路580號　TEL：05-2717000　FAX：05-2717095<br>民雄校區：62103 嘉義縣民雄鄉文隆村85號　TEL：05-2263411　FAX：05-2264621<br>林森校區：60074 嘉義市東區林森東路151號　TEL：05-2717000　FAX：05-2717095<br>軍訓室值勤教官24H緊急電話：05-2717373</div>",
+                content: "<div class='p-2' style='text-align:center'>蘭潭校區：60004 嘉義市東區學府路300號<a href='https://goo.gl/maps/rpRcDAHZSxx'><img src='gmap.png' border='0' width='20px' height='20px'></a>　TEL：05-2717000　FAX：05-2717095<br>新民校區：60054 嘉義市西區新民路580號<a href='https://goo.gl/maps/zzSyNq5wvU42'><img src='gmap.png' border='0' width='20px' height='20px'></a>　TEL：05-2717000　FAX：05-2717095<br>民雄校區：62103 嘉義縣民雄鄉文隆村85號<a href='https://goo.gl/maps/GuaX2HNRZ3y'><img src='gmap.png' border='0' width='20px' height='20px'></a>　TEL：05-2263411　FAX：05-2264621<br>林森校區：60074 嘉義市東區林森東路151號<a href='https://goo.gl/maps/d39cDh6Knqx'><img src='gmap.png' border='0' width='20px' height='20px'></a>　TEL：05-2717000　FAX：05-2717095<br>軍訓室值勤教官24H緊急電話：05-2717373</div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
@@ -316,6 +313,23 @@
                 icon: "<span class='mif-apps'></span>",
                 title: "關於小幫手",
                 content: "<div class='p-2' style='text-align:center'>小幫手版本：網頁版<br>更新年月日：2019/01/29<br>小幫手作者：木設系　謝旭東<br>網頁使用模板：Metro 4 - https://metroui.org.ua</div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				position: "fixed",
+                //place: "center",
+				top: "25%",
+				left: "5%",
+            });
+        }
+
+        function donate(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-apps'></span>",
+                title: "斗內東東",
+                content: "<div class='p-2' style='text-align:center'>未來東東創業結婚時再跟大家拿錢錢(๑´ㅂ`๑)</div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
