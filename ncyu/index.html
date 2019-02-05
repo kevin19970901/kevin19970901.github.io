@@ -255,9 +255,9 @@
 				news();
 				//Create a GUID
 				user = guid();
-				//Set the user's cookie to their GUID expiring in 365 days
+				//Set the user's cookie to their GUID expiring in 7 days
 				if (user != null && user != "") {
-					setCookie("user", user, 365);
+					setCookie("user", user, 7);
 				}
 			}
 		}
