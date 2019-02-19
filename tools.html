@@ -1,135 +1,165 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- saved from url=(0052)http://www.yuansun.com.tw/demo/jq_test/rollover.html -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-<title>T.C.Studio 東東的自製軟體</title> 
-<style type="text/css"> 
-<!-- 
-body{margin:0;font-size:1em;font-family:Verdana,Arial,Helvetica,sans-serif;background:#FFC559;} 
-code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
-.config_source code{font-size:.8em;color:#000000;} 
-pre{margin:0;font-size:1.4em;word-wrap:break-word;} 
-ul,ol{margin:10px 0 10px 40px;} 
-ul.first,ol.first{margin-top:5px;} 
-fieldset{padding:0 15px 10px 15px;} 
-.summary-container fieldset{padding-bottom:5px;margin-top:4px;} 
-legend.no-expand-all{padding:2px 15px 4px 10px;margin:0 0 0 -12px;} 
-legend{color:#333333;padding:4px 15px 4px 10px;margin:4px 0 8px -12px;_margin-top:0px; 
- border-top:1px solid #EDEDED;border-left:1px solid #EDEDED;border-right:1px solid #969696; 
- border-bottom:1px solid #969696;background:#FFECC9;font-weight:bold;font-size:1.5em;} 
-a:link,a:visited{color:#007EFF;font-weight:bold;} 
-a:hover{text-decoration:none;} 
-h1{font-size:2.4em;margin:0;color:#FFF;} 
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.4em;margin:10px 0 0 0;color:#CC0000;} 
-h4{font-size:1.2em;margin:10px 0 5px 0; 
-}#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS",Verdana,sans-serif; 
- color:#FFF;background-color:#D18800;
-}#content{margin:0 0 0 2%;position:relative;} 
-.summary-container,.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;} 
-.config_source{background:#fff5c4;} 
-.content-container p{margin:0 0 10px 0; 
-}#details-left{width:35%;float:left;margin-right:2%; 
-}#details-right{width:63%;float:left;overflow:hidden; 
-}#server_version{width:96%;_height:1px;min-height:1px;margin:0 0 5px 0;padding:11px 2% 8px 2%;color:#FFFFFF; 
- background-color:#805300;border-bottom:1px solid #C1CFDD;border-top:1px solid #4A6C8E;font-weight:normal; 
- font-size:1em;color:#FFF;text-align:left; 
-}#server_version p{margin:5px 0;} 
-table{margin:4px 0 4px 0;width:100%;border:none;} 
-td,th{vertical-align:top;padding:3px 0;text-align:left;font-weight:bold;border:none;} 
-th{width:30%;text-align:right;padding-right:2%;font-weight:normal;} 
-thead th{background-color:#ebebeb;width:25%; 
-}#details-right th{width:20%;} 
-table tr.alt td,table tr.alt th{background-color:#ebebeb;} 
-.highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
-.clear{clear:both;} 
-.preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
---> 
-</style> 
- 
-</head> 
-<body> 
-<div id="header"><a href="index.html" title="點擊回到首頁"><img src="assets/img/serverlogo.png" style="display:block; margin:auto;" class="logo" /></a></div> 
-<div id="server_version"><h1>東東的自製軟體</h1></div> 
-<div id="content"> 
-<div class="content-container"> 
- <fieldset><legend>嘉大小幫手網頁版　NCYU Helper for Web Browser</legend> 
-  <div id="details-left"> 
-	<font size="4">
-  　　嘉義大學網頁的各項常用功能分散於各個行政單位的頁面中，對於學生來說實在不便，本網頁可讓各位快速開啟學校內常用的網頁與資源，省去慢慢找又找不到的困境。<br><br>本網頁於電腦或手機上均可使用！<br><br>發布日期：2018/11/25　更新日期：2019/01/29<br><br>電腦手機皆可直接使用！　<a href="http://bit.ly/twncyu">http://bit.ly/twncyu</a><br>
-  </div> 
-  <div id="details-right">
-	<img src='helper_webver.png' BORDER='0' width='100%' height='100%'>
-  </font>
-  </div>
-  </fieldset>
-</div>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="zh-Hant-TW">
+	<!-- Prohibit Select -->
+	<style type="text/css">
+		body{
+		-moz-user-select : none;
+		-webkit-user-select: none;
+		}
+	</style>
 
-<div class="content-container"> 
- <fieldset><legend>嘉大小幫手 R8　NCYU Helper R8</legend> 
-  <div id="details-left"> 
-	<font size="4">
-  　　嘉義大學網頁的各項常用功能分散於各個行政單位的頁面中，對於學生來說實在不便，本網頁可讓各位快速開啟學校內常用的網頁與資源，省去慢慢找又找不到的困境。<br>This tool can help you open school website easier.<br><br>　　不會安裝與使用請看使用說明，需要移除舊版本再安裝才能正常執行！<br>發布日期：2018/10/01<br><br>You need to remove old version and install this version to execute.<br>Release date: 2018/10/01<br><br>下載 (Download)：　<a href="https://drive.google.com/file/d/1BLIB-huXwzNWpRD3Jy85p24ESBJT4eeB">點我下載 (Click me)</a><br><br>使用說明 (Guide)：　<a href="http://mctcstudio.weebly.com/220252282323567241712516320351299923549826126.html">點我進入 (Click me)</a><br><br>問答集 (Ｑ ＆ Ａ)：　<a href="http://mctcstudio.weebly.com/2202522823235672417125163qa.html">點我進入 (Click me)</a><br>
-  </div> 
-  <div id="details-right">
-	<img src='helper_r8.png' BORDER='0' width='100%' height='100%'>
-  </font>
-  </div>
-  </fieldset>
-</div>
+	<head>
+		<title>T.C.Studio 東東的自製軟體</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="spectral_assets/css/main.css"/>
+		<link rel="stylesheet" href="spectral_assets/css/gototop.css"/>
+		<noscript><link rel="stylesheet" href="spectral_assets/css/noscript.css"/></noscript>
+	</head>
+	<div class="top"></div>
+	<body class="is-preload">
 
-<div class="content-container"> 
- <fieldset><legend>防止RC語音自動更新</legend> 
-  <div id="details-left"> 
-	<font size="4">
-  　　相信有很多人對於RC語音的自動更新通知感到厭煩，不想更新的話，每次都得重複關閉更新通知，RC語音的更新通知來自於liveup.exe，如果刪除該檔案的話，每開一次RC都會再次產生該檔案，而且該檔案似乎有BUG，背景執行時，常占用過高的CPU比例。<br><br>　　所以東東自己製作了一個空殼檔案，取代liveup.exe，並將其設定為唯讀，以達到目的<br><br><a href="https://drive.google.com/file/d/0B3aQGaBJs5cFTmZ6NUw1QnhiYlU">點我下載LIVEUP.EXE空殼檔案</a>​<br><br>１．請下載東東製作的liveup.exe空殼檔案。<br><br>２．將該檔案移動至RC語音的預設安裝位置　C:\Program Files (x86)\RC語音　或　C:\Program Files\RC語音<br><br>３．對著東東製作的空殼檔案右鍵　＞　內容　＞　勾選唯讀　＞　按下確認<br><br>４．以後開啟RC語音時，請開啟RC語音的桌面捷徑，每次開啟第一次時都會閃退是正常的​，請再開一次就好​。<br>
-  </div> 
-  <div id="details-right">
-	<img src='rc.png' BORDER='0' width='100%' height='100%'>
-  </font>
-  </div>
-  </fieldset>
-</div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<div class="content-container"> 
- <fieldset><legend>RCNH 餐廳城市數值修改器</legend> 
-  <div id="details-left"> 
-	<font size="4">
-  　　本工具可以修改 Restaurant City 遊戲內的數值，藉此達﻿到特殊目的。<br><br>目前版本：V6<br>發布日期：2010/07/04<br><br><a href="http://rshack.droppages.com">本工具已失效，請點我使用另一種修改方式。</a><br>
-  </div> 
-  <div id="details-right">
-	<img src='rcnh.png' BORDER='0' width='100%' height='100%'>
-  </font>
-  </div>
-  </fieldset>
-</div>
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="https://kevin19970901.github.io">T.C.Studio</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="https://kevin19970901.github.io">回到首頁</a></li>
+											<li><a href="profile.html">個人簡歷</a></li>
+											<li><a href="gameid.html">遊戲揪團</a></li>
+											<li><a>我的軟體（目前位置）</a></li>
+											<li><a href="works.html">我的作品</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-<div class="content-container"> 
- <fieldset><legend>電子雞97版（花瓶）</legend> 
-  <div id="details-left"> 
-	<font size="4">
-  懷念小時候人手一隻電子雞嘛？<br>本小遊戲將帶你回到你的童年。<br><br>目前版本：R2<br>發布日期：2012/07/05<br>
-  </div> 
-  <div id="details-right">
-	<img src='letschicken.png' BORDER='0' width='100%' height='100%'>
-  </font>
-  </div>
-  </fieldset>
-</div>
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>自製軟體</h2>
+							<p>停止更新的軟體或版本不再開放下載。</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
 
-<div class="content-container"> 
- <fieldset><legend>刷魚幣工具</legend> 
-  <div id="details-left"> 
-	<font size="4">
-  利用Playfish內的BUG來免費獲得魚幣​。<br><br>目前版本：V1<br><br>發布日期：2011/03/04<br>
-  </div> 
-  <div id="details-right">
-	<img src='fishcoin.png' BORDER='0' width='100%' height='100%'>
-  </font>
-  </div>
-  </fieldset>
-</div>
+								<h3>嘉大小幫手網頁版　NCYU Helper for Web Browse</h3>
+								<p><span class="image right"><img src="spectral_assets/images/helper_webver.jpg" alt=""/></span>　　嘉義大學網頁的各項常用功能分散於各個行政單位的頁面中，對於學生來說實在不便，本網頁可讓各位快速開啟學校內常用的網頁與資源，省去慢慢找又找不到的困境。</p>
 
-</div> 
- 
- 
-</body></html>
+								<p>本網頁於電腦或手機上均可使用！<br/>
+								發布日期：2018/11/25<br/>
+								更新日期：2019/01/29</p>
+
+								<a href="http://bit.ly/twncyu" class="button primary icon fa-sign-in">進入網站</a>
+
+								<hr/>
+
+								<h4>嘉大小幫手 R8　NCYU Helper R8</h4>
+								<p><span class="image right"><img src="spectral_assets/images/helper_r8.jpg" alt=""/></span>　　嘉義大學網頁的各項常用功能分散於各個行政單位的頁面中，對於學生來說實在不便，本網頁可讓各位快速開啟學校內常用的網頁與資源，省去慢慢找又找不到的困境。<br/>
+								This tool can help you open school website easier.</p>
+
+								<p>　　不會安裝與使用請看使用說明，需要移除舊版本再安裝才能正常執行！<br/>
+								發布日期：2018/10/01</p>
+
+								<p>You need to remove old version and install this version to execute.<br/>
+								Release date: 2018/10/01</p>
+
+								<a href="https://drive.google.com/file/d/1BLIB-huXwzNWpRD3Jy85p24ESBJT4eeB" class="button primary icon fa-download">下載</a>　<a href="http://mctcstudio.weebly.com/220252282323567241712516320351299923549826126.html" class="button primary icon fa-book">使用說明</a>　<a href="http://mctcstudio.weebly.com/2202522823235672417125163qa.html" class="button primary icon fa-question">常見問答</a>
+
+								<hr/>
+
+								<h4>防止RC語音自動更新</h4>
+								<p><span class="image right"><img src="spectral_assets/images/rc.png" alt=""/></span>　　有很多人對於RC語音的自動更新通知感到厭煩，不想更新的話，每次都得重複關閉更新通知，RC語音的更新通知來自於liveup.exe，如果刪除該檔案的話，每開一次RC都會再次產生該檔案，而且該檔案似乎有BUG，背景執行時，常占用過高的CPU比例。<br/>
+								　　所以東東自己製作了一個空殼檔案，取代liveup.exe，並將其設定為唯讀，以達到目的</p>
+
+								<p>不會安裝與使用請看使用說明，需要移除舊版本再安裝才能正常執行！<br/>
+								發布日期：2018/10/01</p>
+
+								<ol>
+									<li>請下載東東製作的liveup.exe空殼檔案。</li>
+									<li>將該檔案移動至RC語音的預設安裝位置　C:\Program Files (x86)\RC語音　或　C:\Program Files\RC語音</li>
+									<li>對著東東製作的空殼檔案右鍵　＞　內容　＞　勾選唯讀　＞　按下確認</li>
+									<li>以後開啟RC語音時，請開啟RC語音的桌面捷徑，每次開啟第一次時都會閃退是正常的​，請再開一次就好​。</li>
+								</ol>
+
+								<a href="https://drive.google.com/file/d/0B3aQGaBJs5cFTmZ6NUw1QnhiYlU" class="button primary icon fa-download">下載</a>
+
+								<hr/>
+
+								<h4>餐廳城市數值修改器 RCNH</h4>
+								<p><span class="image right"><img src="spectral_assets/images/rcnh.jpg" alt=""/></span>　　本工具可以修改 Restaurant City 遊戲內的數值，藉此達﻿到特殊目的。<br/>
+								　　此工具不再更新，請點擊下方紅色按鈕進入另一網站，此為替代方案。</p>
+
+								<p>目前版本：V6<br/>
+								發布日期：2010/07/04</p>
+
+								<a href="http://bit.ly/rs-hack" class="button primary icon fa-sign-in">使用替代方案</a><br/><br/><br/>
+
+								<hr/>
+
+								<h4>電子雞97版（花瓶）</h4>
+								<p><span class="image right"><img src="spectral_assets/images/letschicken.png" alt=""/></span>　　懷念小時候人手一隻電子雞嘛？本小遊戲將帶你回到你的童年。</p>
+
+								<p>目前版本：R2<br/>
+								發布日期：2012/07/05</p><br/><br/><br/>
+
+								<hr/>
+
+								<h4>刷魚幣工具</h4>
+								<p><span class="image right"><img src="spectral_assets/images/fishcoin.png" alt=""/></span>　　利用Playfish內的BUG來免費獲得魚幣​。</p>
+
+								<p>目前版本：V1<br/>
+								發布日期：2011/03/04</p><br/><br/>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/kevin860901" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/kevin19970901" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/kevin19970901" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://kevin19970901.github.io" class="icon fa-dribbble"><span class="label">Website</span></a></li>
+							<li><a href="mailto:nentiwant@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; T.C.Studio and TurboJet</li><li>網頁模板來源：<a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Go to top button -->
+			<div class='scrolltop'>
+				<div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="spectral_assets/js/jquery.min.js"></script>
+			<script src="spectral_assets/js/jquery.scrollex.min.js"></script>
+			<script src="spectral_assets/js/jquery.scrolly.min.js"></script>
+			<script src="spectral_assets/js/browser.min.js"></script>
+			<script src="spectral_assets/js/breakpoints.min.js"></script>
+			<script src="spectral_assets/js/util.js"></script>
+			<script src="spectral_assets/js/main.js"></script>
+			<script src="spectral_assets/js/gototop.js"></script>
+			<script src="spectral_assets/js/banrightclick.js"></script>
+
+	</body>
+</html>
