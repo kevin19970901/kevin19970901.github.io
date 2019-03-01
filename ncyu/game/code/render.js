@@ -205,7 +205,7 @@ ctx.font = "12pt Arial";
 ctx.textBaseline = "top";
 ctx.fillText("人口：" + game.pop, 75, 5);
 ctx.fillStyle = balanceColor;
-ctx.fillText("存款：" + game.money, 75, 20);
+ctx.fillText("存款：" + game.money + "元", 75, 20);
 ctx.fillStyle = "Black";
 if (helpOn) {
 ctx.fillText("單擊下面的圖示更換欲建築的方塊，滑鼠左鍵放置方塊。", 75, 35);
