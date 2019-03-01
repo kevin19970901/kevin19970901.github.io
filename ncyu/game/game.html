@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>放逐者傳記</title>
+  <style>
+    .golden {
+      background: linear-gradient(#FFD500, #E5BF00);
+      border: 2px solid #CCAA00;
+      color: #665300;
+    }
+  </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script>
+var cv = document.getElementById('canvas');
+var ctx = cv.getContext('2d');
+
+cv.width = 1316;
+cv.height = 547;
+
+var minimapOn = false;
+
+function run() {
+updateGame((Date.now() - time) / 1000);
+render();
+if (minimapOn) minmapren();
+time = Date.now();
+}
+
+var time = Date.now();
+setInterval(run, 10);
+
+var saveImg = ctx2.createImageData(25, 30);
+
+function saveData() {
+var xTilesets = [];
+
+for (var i=0; i<tiles.length; i++) {
+xTilesets.push(tiles[i].tsX);
+}
+
+xTilesets.push(game.money); //Integer
+xTilesets.push(game.pop); //Integer
+xTilesets.push(game.started); //Boolean
+xTilesets.push(game.popHasRisen); //Boolean
+xTilesets.push(game.over); //Boolean
+xTilesets.push(inventory.lumber); //Integer
+xTilesets.push(inventory.food); //Integer
+xTilesets.push(month.dayOf); //Integer
+xTilesets.push(month.num); //Integer
+xTilesets.push(game.villname); //String
+document.getElementById("savedataText").value = xTilesets;
+}
+
+</script>
+<script src="code/game.js"></script>
+<script src="code/render.js"></script>
+<script src="code/map.js"></script>
+<script src="code/spriteVars.js"></script>
+<script src="code/HUD.js"></script>
+<script src="code/HUDItems.js"></script>
+<script src="code/villagers.js"></script>
+				<script>
+					function Function0() {
+					var copyText = document.getElementById("savedataText");
+					copyText.select();
+					document.execCommand("Copy");
+					}
+				</script>
+</br>存檔後框內出現代碼（按複製代碼），讀取進度時清除框內文字，再貼上代碼即可讀取進度。</b><input class="golden" type="text" id="savedataText"/><button class="golden" onclick="saveData()">儲存進度</button><button class="golden" onclick="Function0()">複製代碼</button><button class="golden" onclick="js:loadSave();">載入存檔</button><br>
+<table>
+<tr>
+<td class="golden"><b>移動速度：</b><button class="golden" onclick="js:moveSpeed=200">正常</button><button class="golden" onclick="js:moveSpeed=400">2倍</button><button class="golden" onclick="js:moveSpeed=0">停止</button></td class="golden">       <td class="golden"><b>建築模式：</b><button class="golden" onclick="js:buildModeOn=true">開</button><button class="golden" onclick="js:buildModeOn=false">關</button></td class="golden">
+        <td class="golden"><b>時間：</b><button class="golden" onclick='js:lightMode="day"'>白天</button><button class="golden" onclick='js:lightMode="night"'>夜晚</button></td class="golden">      <td class="golden"><b>小地圖：</b><button class="golden" onclick='js:minimapOn=true'>開</button><button class="golden" onclick='js:minimapOn=false'>關</button></td class="golden">
+</tr>
+</table>
+</body>
+</html>

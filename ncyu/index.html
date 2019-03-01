@@ -154,13 +154,13 @@
                     <div class="slide" data-cover="images/5.jpg"></div>
                     <span class="branding-bar">可愛動物</span>
                 </div>
-                <div data-role="tile" data-size="wide" data-effect="image-set" class="bg-white fg-black">
+                <a onclick="game()" data-role="tile" data-size="wide" data-effect="image-set" class="bg-white fg-black">
                     <img src="images/apple.png">
                     <img src="images/pineapple.png">
                     <img src="images/mango.png">
                     <img src="images/banana.png">
                     <img src="images/guava.png">
-                </div>
+                </a>
             </div>
 
             <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="小幫手相關">
@@ -339,6 +339,23 @@
                 icon: "<span class='mif-cogs'></span>",
                 title: "請選擇查詢項目",
                 content: "<div class='p-2' style='text-align:center'><a href='https://house.nfu.edu.tw/NCYU'>嘉大校外賃居網（校方提供）</a><br><a href='https://www.facebook.com/groups/697453850283188'>嘉義租屋媒合資訊網（FB社團）</a><br><a href='https://www.facebook.com/groups/344095802376944'>嘉義租屋、二手廣告資訊網（FB社團）</a></div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				position: "fixed",
+                //place: "center",
+				top: "25%",
+				left: "5%",
+            });
+        }
+
+		function game(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-gamepad'></span>",
+                title: "恭喜發現彩蛋",
+                content: "<div class='p-2' style='text-align:center'><a href='game/game.html'>進入遊戲</a><br></div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
