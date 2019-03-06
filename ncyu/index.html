@@ -225,9 +225,9 @@
 		}
 
 		//Sets the cookie with given c_name to given value for exdays taken from w3school
-		function setCookie(c_name, value, exdays) {
+		function setCookie(c_name, c_value, 0) {
 			var exdate = new Date();
-			exdate.setDate(exdate.getDate() + 0);
+			exdate.setDate(exdate.getDate() + exdays);
 			var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
 			document.cookie = c_name + "=" + c_value;
 		}
