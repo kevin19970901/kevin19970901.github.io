@@ -225,13 +225,15 @@
 		}
 
 		//Sets the cookie with given c_name to given value for exdays taken from w3school
-		function setCookie(c_name, value, exdays) {
-		exdays = 10;
-			var exdate = new Date();
-			exdate.setDate(exdate.getDate() + exdays);
-			var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
-			document.cookie = c_name + "=" + c_value;
-		}
+		//function setCookie(c_name, value, exdays) {
+		//	var exdate = new Date();
+		//	exdate.setDate(exdate.getDate() + exdays);
+		//	var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+		//	document.cookie = c_name + "=" + c_value;
+		//}
+
+		//send a cookie that expires in 1 hours
+		function setcookie("c_name", value, time()-3600);
 
 		//Function for GUID creation
 		function s4() {
