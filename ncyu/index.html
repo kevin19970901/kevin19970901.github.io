@@ -146,14 +146,14 @@
             </div>
 			
             <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="相簿">
-                <div data-role="tile" data-size="wide" data-effect="animate-slide-left" class="bg-green fg-white">
+                <a onclick="bdwayne()" data-role="tile" data-size="wide" data-effect="animate-slide-left" class="bg-green fg-white">
                     <div class="slide" data-cover="images/1.jpg"></div>
                     <div class="slide" data-cover="images/2.jpg"></div>
                     <div class="slide" data-cover="images/3.jpg"></div>
                     <div class="slide" data-cover="images/4.jpg"></div>
                     <div class="slide" data-cover="images/5.jpg"></div>
                     <span class="branding-bar">可愛動物</span>
-                </div>
+                </a>
                 <a onclick="game()" data-role="tile" data-size="wide" data-effect="image-set" class="bg-white fg-black">
                     <img src="images/apple.png">
                     <img src="images/pineapple.png">
@@ -169,20 +169,20 @@
                     <span class="branding-bar">回饋意見</span>
                     <span class="badge-bottom  mif-arrow-right"></span>
                 </a>
-                <a onclick="aboutme()" data-role="tile" class="bg-cyan fg-white">
+                <a href="https://kevin19970901.github.io/profile.html" data-role="tile" class="bg-cyan fg-white">
                     <span class="mif-user-secret icon"></span>
                     <span class="branding-bar">關於作者</span>
-                    <span class="badge-bottom mif-more-horiz"></span>
+                    <span class="badge-bottom mif-arrow-right"></span>
                 </a>
                 <a onclick="about()" data-role="tile" class="bg-orange fg-white">
                     <span class="mif-bubble icon"></span>
                     <span class="branding-bar">關於小幫手</span>
 					<span class="badge-bottom mif-more-horiz"></span>
                 </a>
-                <a href="https://kevin19970901.github.io" data-role="tile" class="bg-green fg-white">
+                <a onclick="changelog()" data-role="tile" class="bg-green fg-white">
                     <span class="mif-news icon"></span>
-                    <span class="branding-bar">東東個人網站</span>
-					<span class="badge-bottom mif-arrow-right"></span>
+                    <span class="branding-bar">更新日誌</span>
+					<span class="badge-bottom mif-more-horiz"></span>
                 </a>
                 <a onclick="donate()" data-role="tile" class="bg-brown fg-white">
                     <span class="mif-dollar2 icon"></span>
@@ -203,13 +203,29 @@
     <script src="metro/js/metro.js"></script>
     <script src="start.js"></script>
     <script src="desktop.js"></script>
-	<script src="js/cookie.js"></script>
     <script>
-		function news(){
+		function changelog(){
             Desktop.createWindow({
                 width: "90%",
-                icon: "<span class='mif-apps'></span>",
-                title: "新年快樂 - 來自國動的祝福",
+                icon: "<span class='mif-cogs'></span>",
+                title: "更新日誌",
+                content: "<div class='p-2' style='text-align:center'>2019/03/07<br>取消使用Cookie，因為東東搞不清楚原理。<br>調整部分版面配置。<br>東東偷偷埋藏了二顆彩蛋^Q^。</div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				position: "fixed",
+                //place: "center",
+				top: "25%",
+				left: "5%",
+            });
+        }
+
+		function bdwayne(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-heart'></span>",
+                title: "來自國動的祝福",
                 content: "<div class='p-2' style='text-align:center'>⠄⠄⠄⠄⠄⠄⠄⠈⠉⠁⠈⠉⠉⠙⠿⣿⣿⣿⣿⣿<br>⠄⠄⠄⠄⠄⠄⠄⠄⣀⣀⣀⠄⠄⠄⠄⠄⠹⣿⣿⣿<br>⠄⠄⠄⠄⠄⢐⣲⣿⣿⣯⠭⠉⠙⠲⣄⡀⠄⠈⢿⣿<br>⠐⠄⠄⠰⠒⠚⢩⣉⠼⡟⠙⠛⠿⡟⣤⡳⡀⠄⠄⢻<br>⠄⠄⢀⣀⣀⣢⣶⣿⣦⣭⣤⣭⣵⣶⣿⣿⣏⠄⠄⣿<br>⠄⣼⣿⣿⣿⡉⣿⣀⣽⣸⣿⣿⣿⣿⣿⣿⣿⡆⣀⣿<br>⢠⣿⣿⣿⠿⠟⠛⠻⢿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣼<br>⠄⣿⣿⣿⡆⠄⠄⠄⠄⠳⡈⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>⠄⢹⣿⣿⡇⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>⠄⠄⢿⣿⣷⣨⣽⣭⢁⣡⣿⣿⠟⣩⣿⣿⣿⠿⠿⠟<br>⠄⠄⠈⡍⠻⣿⣿⣿⣿⠟⠋⢁⣼⠿⠋⠉⠄⠄⠄⠄<br>⠄⠄⠄⠈⠴⢬⣙⣛⡥⠴⠂⠄⠄⠄⠄⠄⠄⠄⠄⠄</div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
@@ -296,23 +312,6 @@
                 icon: "<span class='mif-gamepad'></span>",
                 title: "恭喜發現彩蛋",
                 content: "<div class='p-2' style='text-align:center'><a href='game/game.html'>進入遊戲</a><br></div>",
-                overlay: true,
-				overlayColor: "#A0A0A0",
-                //overlayColor: "transparent",
-                modal: true,
-				position: "fixed",
-                //place: "center",
-				top: "25%",
-				left: "5%",
-            });
-        }
-
-		function aboutme(){
-            Desktop.createWindow({
-                width: "90%",
-                icon: "<span class='mif-cogs'></span>",
-                title: "關於作者",
-                content: "<div class='p-2' style='text-align:center'>我是東東，高雄人，目前就讀於木設系。<br>我喜歡：園藝、旅遊、聽歌、玩電腦、看著風景發呆、可愛的你>w<</div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
