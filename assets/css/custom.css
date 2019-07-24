@@ -1,4 +1,9 @@
 @import url("//fonts.googleapis.com/css?family=Ubuntu:400");
+/*修正手機瀏覽時background沒有充滿畫面*/
+@media screen and (max-width: 600px){
+html {
+  height: 100%; }
+}
 body {
   background-image: url('../img/bg.png');
   background-repeat: no-repeat;
@@ -11,10 +16,11 @@ body {
   color: white;
   font-family: "Ubuntu", sans-serif;
 }
+/*修正手機瀏覽時logo位置*/
 @media screen and (max-width: 600px){
 .logo {
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 110px;
   margin-bottom: 20px;
 }
 }
