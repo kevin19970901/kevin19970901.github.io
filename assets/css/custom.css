@@ -1,15 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=Ubuntu:400");
-/*修正手機瀏覽時background沒有充滿畫面*/
-@media screen and (max-width: 720px){
-html {
-  height: 100%;
-  width: 100%;
-}
-}
 body {
   background-image: url('../img/bg.png');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   position: absolute;
