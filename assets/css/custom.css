@@ -5,14 +5,13 @@ body {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  position: absolute;
   width: 100%;
   height: 100%;
   color: white;
   font-family: "Ubuntu", sans-serif;
 }
 /*修正手機瀏覽時logo位置*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
 .logo {
   max-width: 100%;
   margin-top: 110px;
