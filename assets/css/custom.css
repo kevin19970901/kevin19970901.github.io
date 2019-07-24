@@ -1,3 +1,4 @@
+@import url("//fonts.googleapis.com/css?family=Ubuntu:400");
 body {
   background-image: url('../img/bg.png');
   background-repeat: no-repeat;
@@ -10,16 +11,16 @@ body {
   color: white;
   font-family: "Ubuntu", sans-serif;
 }
+@media screen and (max-width: 600px){
+.logo {
+  max-width: 100%;
+  margin-bottom: 100px;
+  margin-bottom: 20px;
+}
+}
 .logo {
   max-width: 100%;
   margin-bottom: 20px;
-}
-@media screen and (max-width: 600px) {
-.container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-40%);
-}
 }
 .container {
   position: relative;
