@@ -30,6 +30,7 @@ body {
 }
 .panel-extra {
   background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
   color: white;
   padding-top: 20px;
   padding-bottom: 5px;
@@ -47,7 +48,7 @@ body {
   padding: 0px;
 }
 .panel-status {
-  margin-top: 30px;
+  margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 10px;
