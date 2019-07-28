@@ -1,126 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="zh-Hant-TW">
-  <head>
-    <!-- Website by Jack (https://jack.wtf/) -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>T.C.Studio 遊戲揪團</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-	<meta property="og:url" content="https://kevin19970901.github.io">
-    <meta property="og:title" content="T.C.Studio 遊戲揪團">
-    <meta property="og:description" content="玩遊戲揪東東，快點複製暱稱ID加好友吧！">
-    <meta property="og:type" content="website">
-  </head>
-  <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-				</button>
-				<a class="navbar-brand" href="https://kevin19970901.github.io">T.C.Studio</a>
+	<!-- Prohibit Select -->
+	<style type="text/css">
+		body{
+		-moz-user-select : none;
+		-webkit-user-select: none;
+		}
+	</style>
+
+	<head>
+		<title>T.C.Studio 遊戲揪團</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<link rel="stylesheet" href="assets/css/gototop.css"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+	</head>
+	<div class="top"></div>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">T.C.Studio</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">回到首頁</a></li>
+											<li><a href="profile.html">個人簡歷</a></li>
+											<li><a>遊戲揪團（目前位置）</a></li>
+											<li><a href="tools.html">我的軟體</a></li>
+											<li><a href="works.html">我的作品</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>遊戲揪團</h2>
+							<p>玩遊戲揪東東，快點複製暱稱ID加好友吧！</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<div class="row">
+									<div class="col-2"><h2>LOL：</h2></div>
+									<div class="col-6"><input type="text" value="東東醬汁真好吃" id="myInput0" readonly></div>
+									<div class="col-4"><a onclick="myFunction0()" class="button primary icon fa-angle-double-right"><i class=fas fa-sign-in-alt></i>複製</a></div>
+								<script>
+								function myFunction0() {
+								var copyText = document.getElementById("myInput0");
+								copyText.select();
+								document.execCommand("Copy");
+								}
+								</script>
+									<div class="col-2"><h2>跑跑：</h2></div>
+									<div class="col-6"><input type="text" value="Freeway殺手" id="myInput1" readonly></div>
+									<div class="col-4"><a onclick="myFunction1()" class="button primary icon fa-angle-double-right"><i class=fas fa-sign-in-alt></i>複製</a></div>
+								<script>
+								function myFunction1() {
+								var copyText = document.getElementById("myInput1");
+								copyText.select();
+								document.execCommand("Copy");
+								}
+								</script>
+									<div class="col-2"><h2>Steam：</h2></div>
+									<div class="col-6"><input type="text" value="kevin19970901" id="myInput2" readonly></div>
+									<div class="col-4"><a onclick="myFunction2()" class="button primary icon fa-angle-double-right"><i class=fas fa-sign-in-alt></i>複製</a></div>
+								<script>
+								function myFunction2() {
+								var copyText = document.getElementById("myInput2");
+								copyText.select();
+								document.execCommand("Copy");
+								}
+								</script>
+									<div class="col-2"><h2>Garena：</h2></div>
+									<div class="col-6"><input type="text" value="kevin860901" id="myInput3" readonly></div>
+									<div class="col-4"><a onclick="myFunction3()" class="button primary icon fa-angle-double-right"><i class=fas fa-sign-in-alt></i>複製</a></div>
+								<script>
+								function myFunction3() {
+								var copyText = document.getElementById("myInput3");
+								copyText.select();
+								document.execCommand("Copy");
+								}
+								</script>
+								</div>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/kevin860901" class="icon fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/kevin19970901" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/kevin19970901" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://kevin19970901.github.io" class="icon fa-dribbble"><span class="label">Website</span></a></li>
+							<li><a href="mailto:nentiwant@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; T.C.Studio</li><li>網頁模板來源：<a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav  navbar-right">
-				<li class="dropdown">
-				<li><a href="profile.html">個人簡歷</a></li>
-				<li class="active"><a>遊戲揪團</a></li>
-				<li><a href="tools.html">我的軟體</a></li>
-				<li><a href="works.html">我的作品</a></li>
-				</li>
-				</ul>
+
+		<!-- Go to top button -->
+			<div class='scrolltop'>
+				<div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
 			</div>
-		</div>
-	</nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div class="panel panel-status">
-            <div class="panel-body">
-			  </a>玩遊戲揪東東，快點複製暱稱ID加好友吧！
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div class="panel panel-status">
-            <div class="panel-body">
-			  </br>
-			  </a>LOL：<font color="black"><input type="text" value="東東醬汁真好吃" id="myInput0" size="10" readonly>
-				<button onclick="myFunction0()">複製暱稱</button></font>
-				<script>
-					function myFunction0() {
-					var copyText = document.getElementById("myInput0");
-					copyText.select();
-					document.execCommand("Copy");
-					}
-				</script></br>
-			  </br>
-			  </a>跑跑：<font color="black"><input type="text" value="Freeway殺手" id="myInput1" size="10" readonly>
-				<button onclick="myFunction1()">複製暱稱</button></font>
-				<script>
-					function myFunction1() {
-					var copyText = document.getElementById("myInput1");
-					copyText.select();
-					document.execCommand("Copy");
-					}
-				</script></br>
-			  </br>
-			  </a>Steam：<font color="black"><input type="text" value="kevin19970901" id="myInput2" size="10" readonly>
-				<button onclick="myFunction2()">複製ID</button></font>
-				<script>
-					function myFunction2() {
-					var copyText = document.getElementById("myInput2");
-					copyText.select();
-					document.execCommand("Copy");
-					}
-				</script></br>
-			  </br>
-			  </a>Garena：<font color="black"><input type="text" value="kevin860901" id="myInput3" size="9" readonly>
-				<button onclick="myFunction3()">複製ID</button></font>
-				<script>
-					function myFunction3() {
-					var copyText = document.getElementById("myInput3");
-					copyText.select();
-					document.execCommand("Copy");
-					}
-				</script></br>
-			  </br>
-			  <a href="index.html"><IMG ID='back' SRC='assets/img/back.png' BORDER='0' width='20px' height='20px' title="上一頁"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/firefly.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-      $.firefly({
-        color: '#7a91c1',
-        minPixel: 1,
-        maxPixel: 3,
-        total : 20,
-      });
-      $.firefly({
-        color: '#ffff83',
-        minPixel: 1,
-        maxPixel: 3,
-        total : 20,
-      });
-      $.firefly({
-        color: '#6ab537',
-        minPixel: 1,
-        maxPixel: 3,
-        total : 20,
-      });
-    </script>
-	<script id="cid0020000210596449821" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 250px;height: 350px;">{"handle":"tcstudio","arch":"js","styles":{"a":"ffcc00","b":100,"c":"000000","d":"000000","k":"ffcc00","l":"ffcc00","m":"ffcc00","p":"10","q":"ffcc00","r":100,"pos":"br","cv":1,"cvfntsz":"22px","cvbg":"ffcc00","cvfg":"000000","cvw":120,"cvh":50,"surl":0,"allowpm":0}}</script>
-  </body>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gototop.js"></script>
+			<script src="assets/js/banrightclick.js"></script>
+
+	</body>
 </html>
