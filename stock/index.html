@@ -91,11 +91,6 @@
 					<span class="branding-bar">錢線百分百FB</span>
 					<span class="badge-bottom mif-arrow-right"></span>
                 </a>
-				<a href="https://www.facebook.com/winnstock" data-role="tile" class="bg-green fg-white">
-                    <span class="mif-facebook2 icon"></span>
-					<span class="branding-bar">王董的大盤籌碼FB</span>
-					<span class="badge-bottom mif-arrow-right"></span>
-                </a>
 				<a onclick="cmoney_warning()" data-role="tile" class="bg-red fg-white">
                     <span class="mif-chat icon"></span>
 					<span class="branding-bar">股市爆料同學會</span>
@@ -206,10 +201,10 @@
                     <span class="branding-bar">技術分析</span>
 					<span class="badge-bottom  mif-arrow-right"></span>
                 </a>
-                <a href="https://www.youtube.com/channel/UCvnLmiWt_zIVIh0zUm_j4Hw" data-role="tile" class="bg-red fg-white">
+                <a href="wang_warning()" data-role="tile" class="bg-red fg-white">
                     <span class="mif-youtube-play icon"></span>
                     <span class="branding-bar">老王愛說笑YT</span>
-                    <span class="badge-bottom mif-arrow-right"></span>
+                    <span class="badge-bottom mif-more-horiz"></span>
                 </a>
             </div>
 
@@ -290,6 +285,23 @@
                 icon: "<span class='mif-warning'></span>",
                 title: "內容警告",
                 content: "<div class='p-2' style='text-align:center'>此社群網站內由網友張貼的內容可能不正確、異常推介股票、人身攻擊、聊天群組詐騙等風險，請自行判斷是否要繼續瀏覽此網站。<br>若不想繼續瀏覽此網站，請點這個對話框右上角的✖離開。<br><a href='https://www.cmoney.tw/follow/channel/hot-stock'>我有自我判斷的能力且了解其中的風險，我想繼續前往此網站。</a></div>",
+                overlay: true,
+				overlayColor: "#A0A0A0",
+                //overlayColor: "transparent",
+                modal: true,
+				position: "fixed",
+                //place: "center",
+				top: "25%",
+				left: "5%",
+            });
+        }
+
+		function wang_warning(){
+            Desktop.createWindow({
+                width: "90%",
+                icon: "<span class='mif-warning'></span>",
+                title: "內容警告",
+                content: "<div class='p-2' style='text-align:center'>加菜小幫手（以下簡稱本網站）無法管理此網站提供之內容，如欲前往此網站，請務必具備獨立思考與自行判斷的能力。<br>若不想繼續瀏覽此網站，請點這個對話框右上角的✖離開。<br><a href='https://www.youtube.com/channel/UCvnLmiWt_zIVIh0zUm_j4Hw'>我有自我判斷的能力且了解其中的風險，我想繼續前往此網站。</a></div>",
                 overlay: true,
 				overlayColor: "#A0A0A0",
                 //overlayColor: "transparent",
